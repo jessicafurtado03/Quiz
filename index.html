@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Tecnologia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>💻 Quiz de Tecnologia</h1>
+    <p class="subtitulo">Responda as 5 perguntas abaixo e veja sua pontuação!</p>
+
+    <form id="quizForm">
+
+      <!-- Pergunta 1 -->
+      <div class="pergunta">
+        <p>1. Um desenvolvedor precisa criar a estrutura de uma página web para apresentar informações de um curso. Qual linguagem deve ser utilizada para definir títulos, parágrafos e listas?</p>
+        <label><input type="radio" name="q1" value="a"> CSS</label>
+        <label><input type="radio" name="q1" value="b"> HTML</label>
+        <label><input type="radio" name="q1" value="c"> JavaScript</label>
+        <label><input type="radio" name="q1" value="d"> SQL</label>
+      </div>
+
+      <!-- Pergunta 2 -->
+      <div class="pergunta">
+        <p>2. Durante a construção de um site institucional, o designer deseja alterar a cor dos textos dos títulos para azul. Qual propriedade do CSS deve ser utilizada?</p>
+        <label><input type="radio" name="q2" value="a"> background-color</label>
+        <label><input type="radio" name="q2" value="b"> font-size</label>
+        <label><input type="radio" name="q2" value="c"> color</label>
+        <label><input type="radio" name="q2" value="d"> text-align</label>
+      </div>
+
+      <!-- Pergunta 3 -->
+      <div class="pergunta">
+        <p>3. Um programador precisa manipular dinamicamente elementos de uma página web. Para selecionar um elemento específico pelo seu identificador (ID), qual método JavaScript deve ser utilizado?</p>
+        <label><input type="radio" name="q3" value="a"> getElementById()</label>
+        <label><input type="radio" name="q3" value="b"> querySelectorAll()</label>
+        <label><input type="radio" name="q3" value="c"> selectById()</label>
+        <label><input type="radio" name="q3" value="d"> getElement()</label>
+      </div>
+
+      <!-- Pergunta 4 -->
+      <div class="pergunta">
+        <p>4. Na criação de um site de comércio eletrônico, o desenvolvedor precisa inserir links para páginas de produtos. Qual tag HTML deve ser usada para criar esses links?</p>
+        <label><input type="radio" name="q4" value="a"> &lt;link&gt;</label>
+        <label><input type="radio" name="q4" value="b"> &lt;a&gt;</label>
+        <label><input type="radio" name="q4" value="c"> &lt;href&gt;</label>
+        <label><input type="radio" name="q4" value="d"> &lt;url&gt;</label>
+      </div>
+
+      <!-- Pergunta 5 -->
+      <div class="pergunta">
+        <p>5. Um estudante está aprendendo sobre tecnologias web e descobre que o CSS é utilizado para definir estilos visuais. Qual alternativa descreve corretamente o CSS?</p>
+        <label><input type="radio" name="q5" value="a"> Uma linguagem de programação</label>
+        <label><input type="radio" name="q5" value="b"> Um banco de dados relacional</label>
+        <label><input type="radio" name="q5" value="c"> Uma linguagem de estilização</label>
+        <label><input type="radio" name="q5" value="d"> Um servidor web</label>
+      </div>
+
+      <button type="button" onclick="verificarRespostas()">✅ Responder</button>
+
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

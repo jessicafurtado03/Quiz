@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #16213e;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 680px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  color: #e94560;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #a8b2d8;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.pergunta {
+  background-color: #0f3460;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  border-left: 4px solid #e94560;
+}
+
+.pergunta p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.pergunta label {
+  display: block;
+  color: #a8b2d8;
+  margin-bottom: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pergunta label:hover {
+  background-color: #e9456022;
+  color: #ffffff;
+}
+
+.pergunta input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #e94560;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #e94560;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #c73652;
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#resultado {
+  margin-top: 28px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: none;
+}
+
+#resultado.acerto-total {
+  background-color: #1b4332;
+  color: #52b788;
+  border: 2px solid #52b788;
+}
+
+#resultado.muito-bom {
+  background-color: #1c3a5e;
+  color: #74b9ff;
+  border: 2px solid #74b9ff;
+}
+
+#resultado.continuar {
+  background-color: #4a1942;
+  color: #fd79a8;
+  border: 2px solid #fd79a8;
+}
